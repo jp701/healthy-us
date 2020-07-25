@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Add Product</title>
+	</head>
+	<body>
+		<center><h2>ADD Product</h2></center>
+		<hr>
+	</body>
+	<form action="" method="post" enctype="multipart/formdata">
+		<nav align="right">
+				<a href="admin_home.html">Home</a> |
+				<a href="index.html">Logout</a>
+		</nav>
+		<br><br>
+		<table bgcolor="#d3d3d3" border="1" align="center" width="35%" height="50%">
+			<tr>
+				<td><b>Product name:</b></td>
+				<td><input type="text" name="pname" id="pname" required></td>
+			</tr>
+			<tr>
+				<td><b>Price:</b></td>
+				<td><input type="text" name="price" id="price" pattern="\d+" required></td>
+			</tr>
+			<tr>
+				<td><b>Manufacturer:</b></td>
+				<td><input type="text" name="mnfc" id="mnfc" required></td>
+			</tr>
+			<tr>
+				<td><b>Description:</b></td>
+				<td><input type="textarea" name="desc" id="desc" rows="2" cols="40"></td>
+			</tr>
+			<tr>
+				<td><b>Usage:</b></td>
+				<td><input type="text" name="use" id="use"></td>
+			</tr>
+			<tr>
+				<td><b>Side-effects:</b></td>
+				<td><input type="text" name="seff" id="seff"></td>
+			</tr>
+			<tr>
+				<td><b>Upload Image:</b></td>
+				<td><input type="file" name="pimg" id="pimg" required></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="reset" name="reset" value="Clear">
+				<input type="submit" name="add" id="add" value="Add Product"></td>
+			</tr>
+		</table>
+	</form>
+	
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register a User</title>
+</head>
+<body>
+		<center><h1>Register Yourself</h1></center>
+		<hr>
+		<a href="index.html">Back to Home</a>
+		<form action="cus_login.html" method="post">
+			<table bgcolor="#d3d3d3" align="center" height="180px">
+				<tr>
+					<td><label for="cuname">Username: </label></td>
+					<td><input type="text" name="username" id="cuname" placeholder="Enter unique username" autofocus required></td>
+				</tr>
+				<tr>
+					<td><label for="cpass">Password: </label></td>
+					<td><input type="password" name="password" id="cpasswd" minlength="8" maxlength="12" placeholder="Password" required></td>
+				</tr>
+				<tr>
+					<td><label for="email">Email-Id:</label></td>
+					<td><input type="email" name="email" pattern=".+\.{com|in}" id="cmail" placeholder="Enter email-id" required></td>
+				</tr>
+				<tr>
+					<td><label for="mobile">Mobile no:</label></td>
+					<td><input type="tel" name="mobile" id="cmob" title="enter 10 digit mobile"pattern="d{10}" placeholder="Enter 10-digit mobile no" required></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="submit" name="register" value="Register"></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><a href="cus_login.html" target="_self">Already registered?</a></td>
+				</tr>
+			</table>
+		</form>
+</body>
+</html>
