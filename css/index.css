@@ -1,0 +1,35 @@
+
+body{
+	background-color: gray;
+}
+
+h1,h2{
+	font-family: Itim, Helvetica,"Trebuchet MS", sans-serif;
+	font-size : 40px;
+	font-variant: small-caps;
+}
+h3{
+	font-family : arial;
+	font-weight: bolder;
+	font-size: 17px;
+}
+p#about{
+	font-family : arial;
+	font-weight: bolder;
+	font-size: 15px;
+}
+
+.button{
+	display: inline-block;
+	color:black;
+	border: none;
+  	padding:7px 15px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.button:hover{
+    border:2px solid #fff;
+    background-color: gray;
+    color: white;  
+}
