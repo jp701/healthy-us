@@ -2,35 +2,38 @@
 <html>
 	<head>
 		<title>Customer Home </title>
+		<link rel="stylesheet" href="css\header.css">
+		<link rel="stylesheet" href="css\customer_home.css">
 	</head>
 	<body>
-		<center><h1>Welcome to Healthy-Us..!!</h1></center>
-		<hr>
-		<div>
-			<nav align="left">
-				<a href="my_orders.html">My Orders</a> |
-				<a href="my_account.html">My Account</a> |
-				<a href="view_cart.html">View Cart</a> |
-				<a href="index.html">Logout</a>
+			<div class="header">
+				<h1>Welcome to Healthy-Us..!!</h1>
+			</div>
+			<nav class="nav">
+				<a id="active" href="customer_home.html">Home</a>
+				<a href="my_orders.html">My Orders</a>
+				<a href="my_account.html">My Account</a>
+				<a href="view_cart.html">View Cart</a>
+				<a href="index.html" style="float:right">Logout</a>
 			</nav>
-		</div>
+			
 		<br><br>
-		
-		<div>
-				<input type="text" name="search" id="search" width="100%" placeholder=" Search for products.."/>
+		<div class="search">
+			<input type="text" name="search" id="search" placeholder="Search for products..">
 		</div>
+		
 		<br>
 		<hr><hr>
 		<br>
 		
 		<form action="" method="get">
-			<table border="2px" align="center" bgcolor="#d3d3d3">
+			<table border="2px" align="center">
 				<tr>
 				
 					<td>
 						<table>
 							<tr>
-								<td><a href="product_info.html"><img src="images/ascoril.jpg" alt="ascoril" height="100%" width="100%" /></a></td>
+								<td><a href="product_info.html"><img src="images/ascoril.jpg" alt="ascoril" /></a></td>
 							</tr>
 							<tr>
 								<td><b>Price:</b> 95 rupees </td>
@@ -44,7 +47,7 @@
 					<td>
 						<table>
 							<tr>
-								<td><a href="product_info.html"><img src="images/pyari_saheli.jpg" alt="Pyari_saheli" height="100%" width="100%"/></a></td>
+								<td><a href="product_info.html"><img src="images/pyari_saheli.jpg" alt="Pyari_saheli"/></a></td>
 							</tr>
 							<tr>
 								<td><b>Price:</b> 120 rupees </td>
@@ -58,7 +61,7 @@
 					<td>
 						<table>
 							<tr>
-								<td><a href="product_info.html"><img src="images/fecozer.jpg" alt="fecozer" height="100%" width="100%"/></a></td>
+								<td><a href="product_info.html"><img src="images/fecozer.jpg" alt="fecozer"/></a></td>
 							</tr>
 							<tr>
 								<td><b>Price:</b> 90 rupees </td>
@@ -72,7 +75,7 @@
 					<td>
 						<table>
 							<tr>
-								<td><a href="product_info.html"><img src="images/derantox.jpg" alt="derantox" height="100%" width="100%"/></a></td>
+								<td><a href="product_info.html"><img src="images/derantox.jpg" alt="derantox" /></a></td>
 							</tr>
 							<tr>
 								<td><b>Price:</b> 115 rupees</td>
@@ -86,10 +89,10 @@
 					<td>
 						<table>
 							<tr>
-								<td><a href="product_info.html"><img src="images/daily_iron.jpg" alt="daily_iron" height="100%" width="100%"/></a></td>
+								<td><a href="product_info.html"><img src="images/daily_iron.jpg" alt="daily_iron"/></a></td>
 							</tr>
 							<tr>
-								<td>Price: 105 rupees</td>
+								<td><B>Price:</B> 105 rupees</td>
 							</tr>
 							<tr>
 								<td><input type="submit" name="add" id="addpr" value="ADD to Cart"></td>

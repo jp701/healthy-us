@@ -2,22 +2,25 @@
 <html>
 	<head>
 		<title>Admin Home</title>
+		<link rel="stylesheet" href="css\header.css">
+		<link rel="stylesheet" href="css\admin_home.css">
 	</head>
 	<body>
-		<center><h1>Welcome to Admin Home</h1></center>
-		<hr>
-		<div>
-			<nav align="left">
-				<a href="add_product.html">ADD Product</a> |
-				<a href="view_product.html">View Products</a> |
-				<a href="view_customer.html">View Customers</a> |
-				<a href="view_order.html">View Orders</a> |
-				<a href="index.html">Logout</a>
-			</nav>
+		<div class="header">
+			<h1>Welcome to Admin Panel</h1>
+		</div>
+		<nav class="nav">
+			<a id="active" href="admin_home.html">Home</a></li>
+			<a href="add_product.html">ADD Product</a>
+			<a href="view_product.html">View Products</a>
+			<a href="view_customer.html">View Customers</a>
+			<a href="view_order.html">View Orders</a>
+			<a href="index.html" style="float:right">Logout</a>
+		</nav>	
 			<br><br>
-			
 			<h2>Available Products</h2>
-			<table border="1" bgcolor="#d3d3d3" align="center" width="100%">
+			
+			<table id="product" align="center">
 				<tr>
 					<td><img src="images/absolut_woman.jpg" alt="absolut_woman" height="250px" width="250px"></td>
 					<td><img src="images/calgym.jpg" alt="calgym" height="250px" width="250px"></td>
@@ -31,10 +34,10 @@
 					<td><img src="images/fecozer.jpg" alt="fecozer" height="250px" width="250px"></td>
 				</tr>
 			</table>
+			
 			<br>
-			<div align="center">
-				<a href="add_product.html"><button type="button" name="add" id="add">ADD PRODUCT</button></a>
+			<div class="add">
+				<a href="add_product.html"><button type="button" name="addpr" id="addpr">ADD PRODUCT</button></a>
 			</div>
-		</div>
 	</body>
 </html>

@@ -1,7 +1,7 @@
 .button{
 	display: inline-block;
 	color:black;
-	border: none;
+	border:1px solid #ccc;
   	padding:7px 15px;
     font-weight: bold;
     border-radius: 3px;
@@ -10,5 +10,63 @@
 .button:hover{
     border:2px solid #fff;
     background-color: gray;
-    color: white;  
+    color: white; 
+}
+
+#clogin input[type]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 6px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#clogin input[type]:focus{
+	border: 2px solid #0D98BA;
+}
+input[type=submit]{
+	width: 100%;
+	font-weight: bold;
+	background-color: #0D98BA;
+	color: #ffffff;
+	padding: 14px 20px;
+	margin: 6px 0;
+	border: 2px solid #0D98BA !important;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover{
+	background-color: #0D98BA;
+	font-weight: bold;
+	color: #fff;
+}
+a{
+	color: blue;
+	text-decoration:none;
+}
+a:hover,a:active{
+	color: blue;
+	text-decoration: underline;
+}
+
+#clogin{
+	background-color:#d3d3d3;
+	border-radius: 4px;
+	height: 60%;
+	width: 30%;
+}
+
+td[id~=title]{
+	color: #0D98BA;
+	font-family: sofia;
+	font-size: 20px;
+}
+
+td[id~=text]{
+	font-family: arial;
+	font-size: 16px;
+	font-weight: bold;
 }

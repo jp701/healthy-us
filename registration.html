@@ -2,35 +2,31 @@
 <html>
 <head>
 	<title>Register a User</title>
+	<link rel="stylesheet" href="css\registration.css">
 </head>
 <body>
 		<center><h1>Register Yourself</h1></center>
 		<hr>
-		<a href="index.html">Back to Home</a>
+		<a href="index.html"><input type="button" class="button" name="about" value="Back to Home"></a>
 		
 		<form action="cus_login.html" method="get">
-			<table bgcolor="#d3d3d3" align="center" height="180px">
+			<table id="reg" align="center">
 				<tr>
-					<td><label for="cuname">Username: </label></td>
-					<td><input type="text" name="username" id="cuname" placeholder="Enter unique username" autofocus required></td>
+					<td rowspan="4" align="center"><img src="images/new_cus.png" alt="New cutomer"/></td>
+					<td><input type="text" name="username" id="cuname" placeholder="Enter Your Name*" autofocus required></td>
 				</tr>
 				<tr>
-					<td><label for="cpass">Password: </label></td>
-					<td><input type="password" name="password" id="cpasswd" minlength="8" maxlength="12" placeholder="Password" required></td>
+					<td><input type="password" name="password" id="cpasswd" minlength="8" maxlength="12" placeholder="Set Password*(min 8 characters)" required></td>
 				</tr>
 				<tr>
-					<td><label for="email">Email-Id:</label></td>
-					<td><input type="email" name="email" pattern=".+\.{com|in}" id="cmail" placeholder="Enter email-id" required></td>
+					<td><input type="email" name="email" pattern=".+\.{com|in}" id="cmail" placeholder="Enter email-id*" required></td>
 				</tr>
 				<tr>
-					<td><label for="mobile">Mobile no:</label></td>
-					<td><input type="tel" name="mobile" id="cmob" title="enter 10 digit mobile" pattern="\d{10}" placeholder="Enter 10-digit mobile no" required></td>
+					<td><input type="tel" name="mobile" id="cmob" title="enter 10 digit mobile" pattern="\d{10}" placeholder="Enter 10-digit mobile no*" required></td>
 				</tr>
 				<tr>
-					<td colspan="2" align="center"><input type="submit" name="register" value="Register"></td>
-				</tr>
-				<tr>
-					<td colspan="2" align="center"><a href="cus_login.html" target="_self">Already registered?</a></td>
+					<td align="center"><a href="cus_login.html"><B>Already registered?</B></a></td>
+					<td align="center"><input type="submit" name="register" value="Register"></td>
 				</tr>
 			</table>
 		</form>

@@ -2,20 +2,25 @@
 <html>
 <head>
 	<title>Admin Login</title>
+	<link rel="stylesheet" href="css\adminlogin.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 </head>
 <body>
 	<center><h1>Admin Login Panel</h1></center>
 	<hr>
-	<a href="index.html">Back to Home</a>
+	<a href="index.html"><input type="button" class="button" name="about" value="Back to Home"></a>
 	
 	<form action="admin_home.html" method="get">
 		<center>
-			<table bgcolor="#d3d3d3" align="center" height="100px">
+			<table id="alogin" align="center">
 				<tr>
-					<td><input type="text" name="username" id="auname" placeholder="Username" autofocus required></td>
+					<td id="title" align="center">Healthy-Us</td>
 				</tr>
 				<tr>
-					<td><input type="password" name="password" id="apasswd" placeholder="Password" required></td>
+					<td><input type="email" name="email" id="aemail" placeholder="Email-Id*" autofocus required></td>
+				</tr>
+				<tr>
+					<td><input type="password" name="password" id="apasswd" placeholder="Password*" required></td>
 				</tr>
 				<tr>
 					<td align="center"><input type="submit" name="login" value="Log in"></td>

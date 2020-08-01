@@ -2,31 +2,37 @@
 <html>
 <head>
 	<title>Customer Login</title>
+	<link rel="stylesheet" href="css\cus_login.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 </head>
 <body>
 	<center><h1>Customer Login Panel</h1></center>
 	<hr>
-	<a href="index.html">Back to Home</a>
+	<a href="index.html"><input type="button" class="button" name="about" value="Back to Home"></a>
 	<form action="customer_home.html" method="get">
 		<center>
-			<table bgcolor="#d3d3d3" align="center" height="150px">
+			<table id="clogin" align="center">
 				<tr>
-					<td><label for="cuname">Username: </label></td>
-					<td><input type="text" name="username" id="cuname" placeholder="Username" autofocus required></td>
+					<!--<td rowspan="4" align="center"><img src="images/welcome.jpg" alt="Welcome Back" height="270px" width="290px"/></td>-->
+					<td id="title" align="center">Healthy-Us</td>
 				</tr>
 				<tr>
-					<td><label for="cpass">Password: </label></td>
-					<td><input type="password" name="password" id="cpasswd" minlength="8" maxlength="12" placeholder="Password" required></td>
+					<td><input type="email" name="email" id="cemail" placeholder="Email-Id*" autofocus required></td>
 				</tr>
 				<tr>
-					<td></td>
-					<td align="right"><a href="forgot_password.html">Forgot Password?</a></td>
+					<td><input type="password" name="password" id="cpasswd" minlength="8" maxlength="12" placeholder="Password*" required></td>
 				</tr>
 				<tr>
-					<td colspan="2" align="center"><input type="submit" name="login" value="Log in"></td>
+					<td align="right"><B><a href="forgot_password.html">Forgot Password?</a></B></td>
 				</tr>
 				<tr>
-					<td colspan="2" align="center"><a href="registration.html" target="_self">Register new user</a></td>
+					<td align="center"><input type="submit" name="login" value="Log in"></td>	
+				</tr>
+				<tr>
+					<td align="center"><a href="registration.html" target="_self"><b>Create an Account</b></a></td>
+				</tr>
+				<tr>
+					
 				</tr>
 			</table>
 		</center>

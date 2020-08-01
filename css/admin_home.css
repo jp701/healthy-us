@@ -1,0 +1,24 @@
+#product{
+	max-width:100%;
+	width:95%;
+	background-color:#d3d3d3;
+	text-align:center;
+	border: 2px solid black;
+}
+#product td{
+	text-align:center;
+	border: 1px solid black;
+}
+
+.add{
+	text-align:center;
+}
+#addpr{
+	text-align: center;
+	padding: 8px 25px;
+	color: white;
+	background-color: crimson;
+	border: 2px solid crimson;
+	border-radius: 4px;
+	font-weight: bold;
+}

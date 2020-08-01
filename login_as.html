@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>index page</title>
+	<title>Login as page</title>
+	<link rel="stylesheet" href="css\login_as.css">
 </head>
-<body bgcolor="#d3d3d3">
+<body bgcolor="gray">
 	<center><h1>Login As</h1></center>
 	<hr>
-	<a href="index.html">Back to Home</a>
+	<a href="index.html"><input type="button" class="button" name="about" value="Back to Home"></a>
 	<br>
 	<center>
-        <input type="button" name="admin" value="Admin" onclick="location.href='adminlogin.html'">
-        <input type="button" name="customer" value="Customer" onclick="location.href='cus_login.html'">
+		<table align="center">
+			<td>
+				<figure>
+					<a href="adminlogin.html"><img src="images/admin1.png" alt="Admin Login" title="Admin" height="100%" width="100%"/></a>
+					<br><br>
+					<figcaption align="center"><mark><b>Admin Login</b></mark></figcaption>
+				</figure>
+			</td>
+			<td>
+				<figure>
+					<a href="cus_login.html"><img src="images/cus.png" alt="Customer Login" title="Customer" height="100%" width="100%"/></a>
+					<figcaption align="center"><mark><b>Customer Login</b></mark></figcaption>
+				</figure>
+			</td>
+		</table>
+        
+        
     </center>
 </body>
 </html>

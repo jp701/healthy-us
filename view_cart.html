@@ -2,23 +2,29 @@
 <html>
 	<head>
 		<title>View Cart</title>
+		<link rel="stylesheet" href="css\header.css">
+		<link rel="stylesheet" href="css\view_cart.css">
 	</head>
 	<body>
-		<center><h2>My Cart</h2></center>
-		<hr>
-		<nav align="right">
-			<a href="customer_home.html">Home</a> |
-			<a href="index.html">Logout</a>
-		</nav>
+			<div class="header">
+				<h1>Welcome to Healthy-Us..!!</h1>
+			</div>
+			<nav class="nav">
+				<a href="customer_home.html">Home</a>
+				<a href="my_orders.html">My Orders</a>
+				<a href="my_account.html">My Account</a>
+				<a id="active" href="view_cart.html">View Cart</a>
+				<a href="index.html" style="float:right">Logout</a>
+			</nav>
 		<br>
 		<h3>
-			<table align="center">
-				<tr><td><img src="images/emptycart.png" alt="Empty Cart" height="300px" width="300px"></td></tr>
-				<tr><td>Looks like there is no item in your cart yet.</td></tr>
-				<tr>
-					<td align="center"><a href="customer_home.html"><b>ADD MEDICINES</b></a></td>
-				</tr>
-			</table>
+			<div class="center" align="center">
+				<img src="images/emptycart.png" alt="Empty Cart" height="300px" width="300px"><br>
+				Looks like there is no item in your cart yet.<br><br>
+				<a href="customer_home.html">
+					<input type="button" class="addM" id="addM" value="ADD MEDICINES">
+				</a>
+			</div>
 		</h3>
 	</body>
 </html>
