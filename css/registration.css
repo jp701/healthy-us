@@ -58,3 +58,22 @@ table{
 	height: 60%;
 	width: 50%;
 }
+
+#msg{
+	display: none;
+	margin-top: 10px;
+	margin-left: 25%;
+	background-color: #d3d3d3;
+	font-weight: bold;
+	height: 60%;
+	width: 50%;
+}
+
+#msg p{
+	margin-left: 5px;
+	padding: 1px 12px;
+}
+.invalid{
+	color: red;
+}
+

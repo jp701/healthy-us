@@ -1,7 +1,10 @@
 body{
-	background-image: url(../images/abstract1.jpg);
-	background-repeat: none;
-	background-color: sky blue;
+	/*background-image: url(../images/abstract1.jpg);*/
+	background-image: linear-gradient(cyan,#10A5F5,blue);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #10A5F5;
 }
 
 .button{

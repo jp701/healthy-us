@@ -9,34 +9,31 @@
 	<center><h1>Customer Login Panel</h1></center>
 	<hr>
 	<a href="index.html"><input type="button" class="button" name="about" value="Back to Home"></a>
+
 	<form action="customer_home.html" method="get">
 		<center>
 			<table id="clogin" align="center">
 				<tr>
-					<!--<td rowspan="4" align="center"><img src="images/welcome.jpg" alt="Welcome Back" height="270px" width="290px"/></td>-->
 					<td id="title" align="center">Healthy-Us</td>
 				</tr>
 				<tr>
-					<td><input type="email" name="email" id="cemail" placeholder="Email-Id*" autofocus required></td>
+					<td><input type="email" name="email" id="cemail" value="user1@gmail.com" placeholder="Email-Id*" autofocus required></td>
 				</tr>
 				<tr>
-					<td><input type="password" name="password" id="cpasswd" minlength="8" maxlength="12" placeholder="Password*" required></td>
+					<td><input type="password" name="password" id="cpasswd" value="user10702" minlength="8" maxlength="12" placeholder="Password*" required></td>
 				</tr>
 				<tr>
 					<td align="right"><B><a href="forgot_password.html">Forgot Password?</a></B></td>
 				</tr>
 				<tr>
-					<td align="center"><input type="submit" name="login" value="Log in"></td>	
+					<td align="center"><input type="submit" onclick="remLogin()" name="login" value="Log in"></td>	
 				</tr>
 				<tr>
 					<td align="center"><a href="registration.html" target="_self"><b>Create an Account</b></a></td>
 				</tr>
-				<tr>
-					
-				</tr>
 			</table>
 		</center>
 	</form>
-	
+	<script type="text/javascript" src="js/remember_login.js"></script>
 </body>
 </html>	

@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="css\registration.css">
 </head>
 <body bgcolor="#10A5F5">
+
 		<center><h1>Register Yourself</h1></center>
 		<hr>
 		<a href="index.html"><input type="button" class="button" name="about" value="Back to Home"></a>
@@ -16,7 +17,8 @@
 					<td><input type="text" name="username" id="cuname" placeholder="Enter Your Name*" autofocus required></td>
 				</tr>
 				<tr>
-					<td><input type="password" name="password" id="cpasswd" minlength="8" maxlength="12" placeholder="Set Password*(min 8 characters)" required></td>
+					<td><input type="password" name="password" id="cpasswd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W]).{8,12}" placeholder="Set Password*(min 8 characters)"
+					title="Password must contain atleast a number, uppercase letter, lowercase letter, special character and 8 to 12 characters" required></td>
 				</tr>
 				<tr>
 					<td><input type="email" name="email" pattern=".+\.{com|in}" id="cmail" placeholder="Enter email-id*" required></td>
@@ -29,6 +31,16 @@
 					<td align="center"><input type="submit" name="register" value="Register"></td>
 				</tr>
 			</table>
+			<br>
+			<div id="msg" align="center">
+				<h3>Password must contain following things:</h3>
+				<p id="lwcase" class="invalid">A lowercase letter</p>
+				<p id="upcase" class="invalid">An Uppercase letter</p>
+				<p id="num" class="invalid">A number</p>
+				<p id="special" class="invalid">A special character</p>
+			</div>
 		</form>
+		
+		<script type="text/javascript" src="js\register.js"></script>
 </body>
 </html>

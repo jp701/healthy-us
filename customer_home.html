@@ -9,6 +9,7 @@
 			<div class="header">
 				<h1>Welcome to Healthy-Us..!!</h1>
 			</div>
+			
 			<nav class="nav">
 				<a id="active" href="customer_home.html">Home</a>
 				<a href="my_orders.html">My Orders</a>
@@ -16,8 +17,13 @@
 				<a href="view_cart.html">View Cart</a>
 				<a href="index.html" style="float:right">Logout</a>
 			</nav>
-			
+			<p id="luname" style="float:right"></p>
 		<br><br>
+		
+		<script>
+			document.getElementById("luname").innerHTML= "<b>Signed in as <font color='blue'>"+localStorage.getItem("uname")+"</font></b>";
+		</script>
+		
 		<div class="search">
 			<input type="text" name="search" id="search" placeholder="Search for products..">
 		</div>
