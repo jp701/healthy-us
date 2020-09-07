@@ -9,8 +9,8 @@ input[type=text]:focus{
 	width: 98%;
 	background-color: #ffffff;
 	border-radius: none;
-	box-shadow: 0 0 7px rgba(81, 203, 238, 1);
-	outline: 2px solid rgba(81, 203, 238, 1);
+	box-shadow: 0 0 10px rgba(81, 203, 238, 1);
+	outline: 2px solid #10A5F5;
 }
 
 input[type=submit]{

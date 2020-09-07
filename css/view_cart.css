@@ -10,3 +10,8 @@
 	border-radius: 4px;
 	padding: 7px 15px;
 }
+
+#addM:hover{
+	background-color: crimson;
+	border: 2px solid crimson;
+}

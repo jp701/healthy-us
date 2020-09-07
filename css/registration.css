@@ -1,3 +1,12 @@
+body{
+	background-image: linear-gradient(to bottom, blue,#10A5F5, cyan);
+	background-repeat: no-repeat;
+	background-color: #fff;
+	background-attachment: fixed;
+	overflow: hidden;
+	height: 100%;
+}
+
 .button{
 	display: inline-block;
 	color:black;
@@ -9,7 +18,7 @@
 
 .button:hover{
     border:2px solid #fff;
-    background-color: gray;
+    background-color: #333;
     color: white;  
 }
 

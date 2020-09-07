@@ -2,11 +2,14 @@
 <html>
 	<head>
 		<title>My Account Details</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css\header.css">
 	</head>
 	<body>
 			<div class="header">
-				<h1>Welcome to Healthy-Us..!!</h1>
+				<h2>Welcome to Healthy-Us..!!</h2>
 			</div>
 			<nav class="nav">
 				<a href="customer_home.html">Home</a>
@@ -17,25 +20,27 @@
 			</nav>
 		<br>
 		
-		<div>
-			<table border="1px" bgcolor="#d3d3d3" align="center" height="50%">
-				<tr>
-					<td><b>Username:</b></td>
-					<td><input type="text" name="uname" placeholder="Username"></td>
-					<td rowspan="4"><img src="images/profile.png" title="My Profile" alt="My Profile" height="150px" width="150px"/></td>
-				</tr>
-				<tr>
-					<td><b>Full Name:</b></td>
-					<td><input type="text" name="fname" placeholder="Full Name"></td>
-				</tr>
-				<tr>
-					<td><b>Email Id:</b></td>
-					<td><input type="text" name="email" placeholder="Email-Id"></td>
-				</tr>
-				<tr>
-					<td><b>Mobile No:</b></td>
-					<td><input type="text" name="mob" placeholder="Mobile No"></td>
-				</tr>
+		<div class="table-responsive">
+			<table class="table table-hover table-striped table-bordered" align="center" style="width:50%;">
+				<tbody>
+					<tr>
+						<th scope="row"><b>Username:</b></th>
+						<td><input type="text" name="uname" placeholder="Username"></td>
+						<td rowspan="4"><img src="images/profile.png" title="My Profile" alt="My Profile" style="text-align:center;" height="200px" width="200px"/></td>
+					</tr>
+					<tr>
+						<th scope="row"><b>Full Name:</b></th>
+						<td><input type="text" name="fname" placeholder="Full Name"></td>
+					</tr>
+					<tr>
+						<th scope="row"><b>Email Id:</b></th>
+						<td><input type="text" name="email" placeholder="Email-Id"></td>
+					</tr>
+					<tr>
+						<th scope="row"><b>Mobile No:</b></th>
+						<td><input type="text" name="mob" placeholder="Mobile No"></td>
+					</tr>
+				</tbody>
 			</table>
 		</div>
 	</body>

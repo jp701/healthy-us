@@ -2,12 +2,20 @@
 <html>
 	<head>
 		<title>View Cart</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css\header.css">
-		<link rel="stylesheet" href="css\view_cart.css">
+		<style>
+			.btn-danger{
+				background-color:crimson;
+				font-weight:bold;
+			}
+		</style>
 	</head>
 	<body>
 			<div class="header">
-				<h1>Welcome to Healthy-Us..!!</h1>
+				<h2>Welcome to Healthy-Us..!!</h2>
 			</div>
 			<nav class="nav">
 				<a href="customer_home.html">Home</a>
@@ -17,14 +25,12 @@
 				<a href="index.html" style="float:right">Logout</a>
 			</nav>
 		<br>
-		<h3>
-			<div class="center" align="center">
+			<div style="text-align:center">
 				<img src="images/emptycart.png" alt="Empty Cart" height="300px" width="300px"><br>
-				Looks like there is no item in your cart yet.<br><br>
+				<h5>Looks like there is no item in your cart yet.</h5><br>
 				<a href="customer_home.html">
-					<input type="button" class="addM" id="addM" value="ADD MEDICINES">
+					<input type="button" class="btn btn-danger" value="ADD MEDICINES">
 				</a>
 			</div>
-		</h3>
 	</body>
 </html>

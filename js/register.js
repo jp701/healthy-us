@@ -8,6 +8,7 @@
 			var upcase= document.getElementById('upcase');
 			var number= document.getElementById('num');
 			var special= document.getElementById('special');
+			var length= document.getElementById('length');
 			pass.onfocus= function(){
 				msg.style.display= "block";
 			}
@@ -38,5 +39,10 @@
 				}
 				else
 					special.style.color= "red";	
+				if(pass.value.length>=8 && pass.value.length<=12){// password length constraint
+					length.style.color = "green";
+				}
+				else
+					length.style.color = "red";
 			}
 			

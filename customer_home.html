@@ -2,12 +2,15 @@
 <html>
 	<head>
 		<title>Customer Home </title>
-		<link rel="stylesheet" href="css\header.css">
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css\customer_home.css">
+		<link rel="stylesheet" href="css\header.css">
 	</head>
 	<body>
 			<div class="header">
-				<h1>Welcome to Healthy-Us..!!</h1>
+				<h2>Welcome to Healthy-Us..!!</h2>
 			</div>
 			
 			<nav class="nav">
@@ -15,7 +18,7 @@
 				<a href="my_orders.html">My Orders</a>
 				<a href="my_account.html">My Account</a>
 				<a href="view_cart.html">View Cart</a>
-				<a href="index.html" style="float:right">Logout</a>
+				<a href="index.html" style="float:right;">Logout</a>
 			</nav>
 			<p id="luname" style="float:right"></p>
 		<br><br>
@@ -29,87 +32,54 @@
 		</div>
 		
 		<br>
-		<hr><hr>
 		<br>
 		
-		<form action="" method="get">
-			<table border="2px" align="center">
-				<tr>
-				
-					<td>
-						<table>
-							<tr>
-								<td><a href="product_info.html"><img src="images/ascoril.jpg" alt="ascoril" /></a></td>
-							</tr>
-							<tr>
-								<td><b>Price:</b> 95 rupees </td>
-							</tr>
-							<tr>
-								<td><input type="submit" name="add" id="addpr" value="ADD to Cart"></td>
-							</tr>
-						</table>
-					</td>
-					
-					<td>
-						<table>
-							<tr>
-								<td><a href="product_info.html"><img src="images/pyari_saheli.jpg" alt="Pyari_saheli"/></a></td>
-							</tr>
-							<tr>
-								<td><b>Price:</b> 120 rupees </td>
-							</tr>
-							<tr>
-								<td><input type="submit" name="add" id="addpr" value="ADD to Cart"></td>
-							</tr>
-						</table>
-					</td>
-					
-					<td>
-						<table>
-							<tr>
-								<td><a href="product_info.html"><img src="images/fecozer.jpg" alt="fecozer"/></a></td>
-							</tr>
-							<tr>
-								<td><b>Price:</b> 90 rupees </td>
-							</tr>
-							<tr>
-								<td><input type="submit" name="add" id="addpr" value="ADD to Cart"></td>
-							</tr>
-						</table>
-					</td>
-					
-					<td>
-						<table>
-							<tr>
-								<td><a href="product_info.html"><img src="images/derantox.jpg" alt="derantox" /></a></td>
-							</tr>
-							<tr>
-								<td><b>Price:</b> 115 rupees</td>
-							</tr>
-							<tr>
-								<td><input type="submit" name="add" id="addpr" value="ADD to Cart"></td>
-							</tr>
-						</table>
-					</td>
-					
-					<td>
-						<table>
-							<tr>
-								<td><a href="product_info.html"><img src="images/daily_iron.jpg" alt="daily_iron"/></a></td>
-							</tr>
-							<tr>
-								<td><B>Price:</B> 105 rupees</td>
-							</tr>
-							<tr>
-								<td><input type="submit" name="add" id="addpr" value="ADD to Cart"></td>
-							</tr>
-						</table>
-					</td>
-	
-				</tr>
-			</table>
-		</form>
+		<div class="container-fluid">
+			<div class="card-group">
+				<div class="card border border-primary">
+					<img class="card-image-top" src="images/ascoril.jpg" alt="ascoril">
+					<div class="card-body">
+						<div class="card-text"><b>Price:</b> 95 rupees</div>
+						<a href="product_info.html" class="btn btn-dark">View</a>
+						<a href="#" class="btn btn-primary">ADD to Cart</a>
+					</div>
+				</div>
+				<div class="card border border-primary">
+					<img class="card-image-top" src="images/pyari_saheli.jpg" alt="Pyari_saheli">
+					<div class="card-body">
+						<div class="card-text"><b>Price:</b> 120 rupees</div>
+						<a href="product_info.html" class="btn btn-dark">View</a>
+						<a href="#" class="btn btn-primary">ADD to Cart</a>
+					</div>
+				</div>
+				<div class="card border border-primary">
+					<img class="card-image-top" src="images/fecozer.jpg" alt="fecozer">
+					<div class="card-body">
+						<div class="card-text"><b>Price:</b> 90 rupees</div>
+						<a href="product_info.html" class="btn btn-dark">View</a>
+						<a href="#" class="btn btn-primary">ADD to Cart</a>
+					</div>
+				</div>
+				<div class="card border border-primary">
+					<img class="card-image-top" src="images/derantox.jpg" alt="derantox">
+					<div class="card-body">
+						<div class="card-text"><b>Price:</b> 115 rupees</div>
+						<a href="product_info.html" class="btn btn-dark">View</a>
+						<a href="#" class="btn btn-primary">ADD to Cart</a>
+					</div>
+				</div>
+				<div class="card border border-primary">
+					<img class="card-image-top" src="images/daily_iron.jpg" alt="daily_iron">
+					<div class="card-body">
+						<div class="card-text"><B>Price:</B> 105 rupees</div>
+						<a href="product_info.html" class="btn btn-dark">View</a>
+						<a href="#" class="btn btn-primary">ADD to Cart</a>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+		
 		<br>
-		<hr><hr>
 	</body>
 </html>

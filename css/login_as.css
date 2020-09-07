@@ -1,3 +1,6 @@
+body{
+	background-color:#10A5F5;
+}
 .button{
 	display: inline-block;
 	color:black;
@@ -9,6 +12,6 @@
 
 .button:hover{
     border:2px solid #fff;
-    background-color: gray;
+    background-color: #333;
     color: white;  
 }
