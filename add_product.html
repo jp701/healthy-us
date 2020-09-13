@@ -2,58 +2,81 @@
 <html>
 	<head>
 		<title>Add Product</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css\header.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div class="header">
-			<h1>Welcome to Admin Panel</h1>
-		</div>
-		<nav class="nav">
-			<a href="admin_home.html">Home</a></li>
-			<a id="active" href="add_product.html">ADD Product</a>
-			<a href="view_product.html">View Products</a>
-			<a href="view_customer.html">View Customers</a>
-			<a href="view_order.html">View Orders</a>
-			<a href="index.html" style="float:right">Logout</a>
-		</nav>	
+			<nav class="navbar navbar-expand-sm navbar-dark" style="background-color:white;">
+				<a class="navbar-brand text-dark ml-sm-3" href="#" style="font-size:40px;">
+					<i id="hus" class="fa fa-stethoscope" ></i>  Healthy-<font color="orange">Us</font>
+				</a>
+			</nav>
+			
+			<nav class="navbar-sm navbar-expand-md bg-dark navbar-dark sticky-top">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Navbar links -->
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="view_product.html"><i class="fa fa-home" style="font-size:24px"></i></a></li>
+						<li class="nav-item"><a class="nav-link" href="add_product.html" id="active">Add Products</a></li>
+						<li class="nav-item"><a class="nav-link" href="view_customer.html">View Customers</a></li>
+						<li class="nav-item"><a class="nav-link" href="view_order.html">View Orders</a></li>
+						<li class="nav-item"><a class="nav-link" href="index.html">Logout</a></li>
+					</ul>
+				</div>
+			</nav>
+			<br>
 		
-		<br><br>
-		<form action="" method="get" enctype="multipart/formdata">
-		<table bgcolor="#d3d3d3" border="1" align="center" width="25%" height="50%">
-			<tr>
-				<td><b>Product name:</b></td>
-				<td><input type="text" name="pname" id="pname" placeholder="Product Name" required></td>
-			</tr>
-			<tr>
-				<td><b>Price:</b></td>
-				<td><input type="text" name="price" id="price" pattern="\d+" placeholder="Product Price" required></td>
-			</tr>
-			<tr>
-				<td><b>Manufacturer:</b></td>
-				<td><input type="text" name="mnfc" id="mnfc" placeholder="manufactured by" required></td>
-			</tr>
-			<tr>
-				<td><b>Description:</b></td>
-				<td><textarea name="desc" id="desc" placeholder="write product description here" rows="5" cols="45"></textarea></td>
-			</tr>
-			<tr>
-				<td><b>Usage:</b></td>
-				<td><input type="text" name="use" id="use" placeholder="Use of product" ></td>
-			</tr>
-			<tr>
-				<td><b>Side-effects:</b></td>
-				<td><input type="text" name="seff" id="seff" placeholder="side-effects" ></td>
-			</tr>
-			<tr>
-				<td><b>Upload Image:</b></td>
-				<td><input type="file" name="pimg" id="pimg" required></td>
-			</tr>
-			<tr>
-				<td colspan="2" align="center"><input type="reset" name="reset" value="Clear">
-				<input type="submit" name="add" id="add" value="Add Product"></td>
-			</tr>
-		</table>
-		</form>
+	<form action="#" method="get" enctype="multipart/formdata">
+		<div class="table-responsive-sm">
+			<table class="table table-hover table-striped table-bordered w-50" align="center">
+				<tbody>
+					<tr>
+						<td><b>Product name:</b></td>
+						<td><input type="text" name="pname" id="pname" placeholder="Product Name" required></td>
+					</tr>
+					<tr>
+						<td><b>Price:</b></td>
+						<td><input type="text" name="price" id="price" pattern="\d+" placeholder="Product Price" required></td>
+					</tr>
+					<tr>
+						<td><b>Manufacturer:</b></td>
+						<td><input type="text" name="mnfc" id="mnfc" placeholder="manufactured by" required></td>
+					</tr>
+					<tr>
+						<td><b>Description:</b></td>
+						<td><textarea name="desc" id="desc" placeholder="write product description here" rows="4" cols="50"></textarea></td>
+					</tr>
+					<tr>
+						<td><b>Usage:</b></td>
+						<td><input type="text" name="use" id="use" placeholder="Use of product" ></td>
+					</tr>
+					<tr>
+						<td><b>Side-effects:</b></td>
+						<td><input type="text" name="seff" id="seff" placeholder="side-effects" ></td>
+					</tr>
+					<tr>
+						<td><b>Upload Image:</b></td>
+						<td><input type="file" name="pimg" id="pimg" required></td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center"><button type="reset" class="btn btn-danger" name="reset">Clear</button>
+						<button type="submit" class="btn btn-primary" name="add" id="add">Add Product</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</form>
 	
 	
 	</body>

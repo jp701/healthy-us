@@ -7,15 +7,20 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css\header.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	</head>
 	
 	<body>
-			<div class="header">
-				<h2>Welcome to Healthy-Us..!!</h2>
-			</div>
+			
+			<nav class="navbar navbar-expand-sm navbar-dark" style="background-color:white;">
+				<a class="navbar-brand text-dark ml-sm-3" href="#" style="font-size:40px;">
+					<i id="hus" class="fa fa-stethoscope" ></i>  Healthy-<font color="orange">Us</font>
+				</a>
+			</nav>
+			
 			<nav class="navbar-sm navbar-expand-md bg-dark navbar-dark sticky-top">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 					<span class="navbar-toggler-icon"></span>
@@ -24,39 +29,23 @@
 				<!-- Navbar links -->
 				<div class="collapse navbar-collapse" id="collapsibleNavbar">
 					<ul class="navbar-nav">
-						<li class="nav-item"><a class="nav-link" href="customer_home.html"><i class="fa fa-home" style="font-size:24px"></i></a></li>
-						<li class="nav-item"><a class="nav-link" href="my_orders.html">My Orders</a></li>
-						<li class="nav-item"><a class="nav-link" href="my_account.html">My Account</a></li>
-						<li class="nav-item"><a class="nav-link" href="view_cart.html">View Cart <i class="fa fa-shopping-cart" style="font-size:20px"></i></a></li>
+						<li class="nav-item"><a class="nav-link" href="view_product.html"><i class="fa fa-home" style="font-size:24px"></i></a></li>
+						<li class="nav-item"><a class="nav-link" href="add_product.html">Add Products</a></li>
+						<li class="nav-item"><a class="nav-link" href="view_customer.html">View Customers</a></li>
+						<li class="nav-item"><a class="nav-link" href="view_order.html">View Orders</a></li>
 						<li class="nav-item"><a class="nav-link" href="index.html">Logout</a></li>
 					</ul>
 				</div>
 			</nav>
-		<br>
-		<link rel="stylesheet" href="css\header.css">
-	</head>
-	<body>
-	
-		<div class="header">
-			<h1>Welcome to Admin Panel</h1>
-		</div>
-		<nav class="nav">
-			<a href="admin_home.html">Home</a>
-			<a href="add_product.html">ADD Product</a>
-			<a href="view_product.html">View Products</a>
-			<a href="view_customer.html">View Customers</a>
-			<a href="view_order.html">View Orders</a>
-			<a href="index.html" style="float:right">Logout</a>
-		</nav>	
 		<br>
 		
 		<table bgcolor="#d3d3d3" align="center">
 			<tr>
 				<td><b>Name: </b>Ascoril LS Syrup</td>
 				<td rowspan="4">
-					<figure>
-						<img src="images/ascoril.jpg" alt="Ascoril syrup"/>
-						<figcaption><mark><b>Ascoril LS Syrup</b></mark></figcaption>
+					<figure class="figure">
+						<img src="images/ascoril.jpg" class="figure-img img-fluid rounded" alt="Ascoril syrup">
+						<figcaption class="figure-caption text-center text-dark"><h5>Ascoril LS Syrup</h5></figcaption>
 					</figure>
 				</td>
 			</tr>
@@ -70,7 +59,7 @@
 				<td><b>Use: </b>Cough with mucus</td>
 			</tr>
 			<tr>
-				<td><b>Description</b></td>
+				<td colspan="2"><b>Description:</b></td>
 			</tr>
 			<tr>
 				<td colspan="2">
@@ -82,7 +71,7 @@
 			</tr>
 			<br>
 			<tr>
-				<td colspan="2"><b>Common Side- effects</b></td>
+				<td colspan="2"><b>Common Side- effects:</b></td>
 			</tr>
 			<tr><td>-> Nausea</td></tr>
 			<tr><td>-> Vomiting</td></tr>

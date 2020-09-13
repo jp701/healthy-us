@@ -2,80 +2,110 @@
 <html>
 	<head>
 		<title>View Orders</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css\header.css">
+		<link rel="stylesheet" href="css\table_responsive.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	</head>
+	
 	<body>
-		<div class="header">
-			<h1>Welcome to Admin Panel</h1>
-		</div>
-		<nav class="nav">
-			<a href="admin_home.html">Home</a></li>
-			<a href="add_product.html">ADD Product</a>
-			<a href="view_product.html">View Products</a>
-			<a href="view_customer.html">View Customers</a>
-			<a id="active" href="view_order.html">View Orders</a>
-			<a href="index.html" style="float:right">Logout</a>
-		</nav>	
-		
-		<br><br>
-		
-		<div>
-			<table border="solid black 1px" bgcolor="#d3d3d3" align="center" width="50%">
+			
+			<nav class="navbar navbar-expand-sm navbar-dark" style="background-color:white;">
+				<a class="navbar-brand text-dark ml-sm-3" href="#" style="font-size:40px;">
+					<i id="hus" class="fa fa-stethoscope" ></i>  Healthy-<font color="orange">Us</font>
+				</a>
+			</nav>
+			
+			<nav class="navbar-sm navbar-expand-md bg-dark navbar-dark sticky-top">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Navbar links -->
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="view_product.html"><i class="fa fa-home" style="font-size:24px"></i></a></li>
+						<li class="nav-item"><a class="nav-link" href="add_product.html">Add Products</a></li>
+						<li class="nav-item"><a class="nav-link" href="view_customer.html">View Customers</a></li>
+						<li class="nav-item"><a class="nav-link" href="view_order.html" id="active" >View Orders</a></li>
+						<li class="nav-item"><a class="nav-link" href="index.html">Logout</a></li>
+					</ul>
+				</div>
+			</nav>
+		<br>
+
+		<div class="table-responsive-sm">
+			<table class="table table-hover table-striped table-bordered" align="center">
+			<thead class="thead-secondary">
 				<tr>
-					<th><b>No.</b></th>
-					<th><b>Username</b></th>
-					<th><b>Email-id</b></th>
-					<th><b>Product Name</b></th>
-					<th><b>Total Price</b></th>
+					<th scope="col">No.</th>
+					<th scope="col">Username</th>
+					<th scope="col">Email-id</th>
+					<th scope="col">Product Name</th>
+					<th scope="col">Order Date</th>
+					<th scope="col">Total Price</th>
 				</tr>
+			</thead>
+			<tbody>
 				<tr>
-					<td>1.</td>
-					<td>pchauhan11</td>
+					<th scope="row">1.</th>
+					<td>Prutha Chauhan</td>
 					<td>prutha@gmail.com</td>
 					<td>
-						<table>
-							<tr><td>Moistal-P</td></tr>
-							<tr><td>absolute_woman</td></tr>
-						</table>
+						<div id="inner">
+							Moistal-P<br>
+							absolute_woman
+						</div>
 					</td>
+					<td>24/08/2020</td>
 					<td>300</td>
 				</tr>
 				<tr>
-					<td>2.</td>
-					<td>ashamistry</td>
+					<th scope="row">2.</th>
+					<td>AshaMistry</td>
 					<td>asha13@gmail.com</td>
 					<td>
-						<table>
-							<tr><td>fecozer</td></tr>
-							<tr><td>al5zyme</td></tr>
-						</table>
+						<div id="inner">
+							fecozer<br>
+							al5zyme
+						</div>
 					</td>
+					<td>01/06/2020</td>
 					<td>295</td>
 				</tr>
 				<tr>
-					<td>3.</td>
+					<th scope="row">3.</th>
 					<td>sejalsavaniya</td>
 					<td>sejals.savniya@gmail.com</td>
 					<td>
-						<table>
-							<tr><td>Volini</td></tr>
-						</table>
+						<div id="inner">
+							Volini
+						</div>
 					</td>
+					<td>29/12/2019</td>
 					<td>150</td>
 				</tr>
 				<tr>
-					<td>4.</td>
-					<td>piyushtl</td>
+					<th scope="row">4.</th>
+					<td>Piyush</td>
 					<td>piyush.tandel@gmail.com</td>
 					<td>
-						<table>
-							<tr><td>depsone</td></tr>
-							<tr><td>nycil</td></tr>
-							<tr><td>zitcare</td></tr>
-						</table>
+						<div id="inner">
+							depsone<br>
+							nycil<br>
+							zitcare
+						</div>
 					</td>
+					<td>02/04/2020</td>
 					<td>450</td>
 				</tr>
+			</tbody>
 			</table>
 		</div>
 	</body>

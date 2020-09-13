@@ -1,28 +1,84 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>View Customers</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>View Customers</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css\header.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 		<style>
+			@media only screen and (max-width:576px)
+			{
+				.container{
+						width:80% !important;
+				}
+			}
 		</style>
 	</head>
+	
 	<body>
-		<div class="header">
-			<h1>Welcome to Admin Panel</h1>
-		</div>
-		<nav class="nav">
-			<a href="admin_home.html">Home</a></li>
-			<a href="add_product.html">ADD Product</a>
-			<a href="view_product.html">View Products</a>
-			<a id="active" href="view_customer.html">View Customers</a>
-			<a href="view_order.html">View Orders</a>
-			<a href="index.html" style="float:right">Logout</a>
-		</nav>	
+			
+			<nav class="navbar navbar-expand-sm navbar-dark" style="background-color:white;">
+				<a class="navbar-brand text-dark ml-sm-3" href="#" style="font-size:40px;">
+					<i id="hus" class="fa fa-stethoscope" ></i>  Healthy-<font color="orange">Us</font>
+				</a>
+			</nav>
+			
+			<nav class="navbar-sm navbar-expand-md bg-dark navbar-dark sticky-top">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Navbar links -->
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="view_product.html"><i class="fa fa-home" style="font-size:24px"></i></a></li>
+						<li class="nav-item"><a class="nav-link" href="add_product.html">Add Products</a></li>
+						<li class="nav-item"><a class="nav-link" href="view_customer.html" id="active">View Customers</a></li>
+						<li class="nav-item"><a class="nav-link" href="view_order.html">View Orders</a></li>
+						<li class="nav-item"><a class="nav-link" href="index.html">Logout</a></li>
+					</ul>
+				</div>
+			</nav>
+		<br>
 		
-		<br><br>
-		<table bgcolor="#d3d3d3" id="user" border="solid 1px" align="center" width="50%">
+		<div class="container" style="width:60%;">
+			<div class="card-group">
+				<div class="card">
+					<img src="images/user.png" class="card-img-top" alt="Profile Pic" height="230px" width="230px">
+					<div class="card-body">
+						<p><b>Username</b> : Sejalsavaniya</p>
+						<p><b>Password</b> : sss52000</p>
+						<p><b>Mobile No</b>: 8282345252</p>
+						<p><b>Email-Id</b> : sejal.savniya@gmail.com</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="images/girl.jpg" class="card-img-top" alt="Profile Pic" height="230px" width="230px"/>
+					<div class="card-body">
+						<p><b>Username</b> : Prutha Chauhan</p>
+						<p><b>Password</b> : prch1103</p>
+						<p><b>Mobile No</b>: 9999021111</p>
+						<p><b>Email-Id</b> : prutha@gmail.com</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="images/user.png" class="card-img-top" alt="Profile Pic" height="230px" width="230px">
+					<div class="card-body">
+						<p><b>Username</b> : AshaMistry</p>
+						<p><b>Password</b> : masha129</p>
+						<p><b>Mobile No</b>: 9899022111</p>
+						<p><b>Email-Id</b> : asha12@gmail.com</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--<table bgcolor="#d3d3d3" id="user" border="solid 1px" align="center" width="50%">
 			<tr>
 				<td>
 					<img src="images/user.png" alt="Profile Pic" height="230px" width="230px">
@@ -91,6 +147,6 @@
 				</td>
 				
 			</tr>
-		</table>
+		</table>-->
 	</body>
 </html>

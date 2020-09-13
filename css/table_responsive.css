@@ -6,6 +6,12 @@
 @media only screen and (max-width:576px)
 {
 	.table{
-		width:95%;
+		width:90%;
 	}
+}
+
+table #inner{
+	text-decoration: none;
+	border: none;
+	background-color: none !important;
 }
