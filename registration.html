@@ -3,7 +3,7 @@
 <head>
 	<title>Register a User</title>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="css\registration.css">
 </head>
 <body bgcolor="#10A5F5">
@@ -15,24 +15,27 @@
 		<form action="cus_login.html" method="get">
 			<table id="reg" align="center">
 				<tr>
-					<td rowspan="4" align="center"><img src="images/new_cus.png" alt="New cutomer" width="75%" height="90%"/></td>
+					<td rowspan="6" align="center"><img src="images/new_cus.png" title="Register Yourself" alt="New Customer" width="75%" height="90%"/></td>
 					<td><input type="text" name="username" id="cuname" placeholder="Enter Your Name*" autofocus required></td>
 				</tr>
 				<tr>
-					<td><input type="password" name="password" id="cpasswd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W]).{8,12}" placeholder="Set Password*(min 8 characters)"
+					<td><input type="password" name="password" id="cpasswd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W]).{8,12}" placeholder="Set Password* (min 8 characters)"
 					title="Password must contain atleast a number, uppercase letter, lowercase letter, special character and 8 to 12 characters" required></td>
 				</tr>
-				<tr>
+				<tr>	
 					<td><input type="email" name="email" pattern=".+\.{com|in}" id="cmail" placeholder="Enter email-id*" required></td>
 				</tr>
 				<tr>
 					<td><input type="tel" name="mobile" id="cmob" title="enter 10 digit mobile" pattern="\d{10}" placeholder="Enter 10-digit mobile no*" required></td>
 				</tr>
 				<tr>
-					<td align="center"><a href="cus_login.html"><B>Already registered?</B></a></td>
 					<td align="center"><input type="submit" name="register" value="Register"></td>
 				</tr>
+				<tr>
+					<td align="center"><a href="cus_login.html"><B>Already registered?</B></a></td>
+				</tr>
 			</table>
+			
 			<br>
 			<div id="msg" align="center">
 				<h3>Password must contain following things:</h3>

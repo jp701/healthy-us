@@ -1,0 +1,11 @@
+
+.table{
+	width:55%;
+}
+			
+@media only screen and (max-width:576px)
+{
+	.table{
+		width:95%;
+	}
+}

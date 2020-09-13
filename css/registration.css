@@ -31,12 +31,6 @@ body{
 	overflow:auto;
 }
 
-@media only screen and (max-width:650px)
-{
-	#reg{
-		width:100%;
-	}
-}
 #reg input[type]{
 	width: 100%;
 	padding: 12px 20px;
@@ -93,4 +87,19 @@ a:hover,a:active{
 }
 .invalid{
 	color: red;
+}
+
+@media only screen and (max-width:650px)
+{
+	#reg{
+		margin-top:15px;
+		width:95%;
+	}
+	#msg{
+		width:95%;
+		margin:auto;
+	}
+	img{
+		display:none;
+	}
 }
