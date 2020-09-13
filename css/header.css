@@ -11,37 +11,17 @@ body{
 	text-align: center;
 	padding: 20px;
 }
-/*.nav {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow : hidden;
-	top:0;
-	position: sticky;
-	background-color: #333;
-}
-.nav a{
-	float: left;
-	display: inline-block;
-	text-decoration: none;
-	font-weight: bold;
-	color: white;
-	padding: 8px 15px;
-}
-.nav a:hover:not(#active){
-	background-color: black;
-	color:white;
-}*/
 
 li #active{
 	text-decoration: none;
 	font-size: 1rem;
 	color: white;
 }
-.nav-item a:hover:not(#active){
+.nav-link:hover:not(#active){
 	color:#20ff00 !important;
 	text-decoration: underline;
-	/*background-color:black;*/
+	/*background-color:black;
+	border-radius:7px;*/
 }
 .nav-item{
 	margin-left:10px;
