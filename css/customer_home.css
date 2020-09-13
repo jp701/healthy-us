@@ -56,10 +56,10 @@ table{
 @media only screen and (max-width:768px)
 {
 	input[type=text]{
-		width: 85%;
+		width: 80%;
 	}
 	input[type=text]:hover{
-		width: 85%;
+		width: 80%;
 	}
 	.form-inline .btn
 	{

@@ -1,6 +1,18 @@
-
+@media only screen and (max-width:576px)
+{
+	.container{
+		width:80% !important;
+	}
+}
 .table{
 	width:55%;
+}
+
+@@media only screen and (max-width:768px)
+{
+	.table{
+		width:80%;
+	}
 }
 			
 @media only screen and (max-width:576px)
