@@ -5,12 +5,13 @@ body{
 *{
 	box-sizing: border-box;
 }
+
 .header{
 	background-color:#bbc2c2;
 	text-align: center;
 	padding: 20px;
 }
-.nav {
+/*.nav {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -19,7 +20,6 @@ body{
 	position: sticky;
 	background-color: #333;
 }
-
 .nav a{
 	float: left;
 	display: inline-block;
@@ -31,16 +31,30 @@ body{
 .nav a:hover:not(#active){
 	background-color: black;
 	color:white;
+}*/
+
+li #active{
+	text-decoration: none;
+	font-size: 1rem;
+	color: white;
 }
-#active{
-	background-color: #39ff15;
-	color: black;
+.nav-item a:hover:not(#active){
+	color:#20ff00 !important;
+	text-decoration: underline;
+	/*background-color:black;*/
+}
+.nav-item{
+	margin-left:10px;
+	padding:0 !important;
 }
 
-
-@media screen and (max-width: 600px) {
-  .nav {
-		float:none;
-		width:100%;
-	}
+#hus{
+	font-size:35px;
+	font-weight:bold;
+	color:#00ff00;
+}
+.navbar-brand{
+	font-weight:bold;
+	font-family: Itim,Helvetica,"Trebuchet MS", sans-serif;
+	font-variant: small-caps;
 }

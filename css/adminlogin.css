@@ -22,6 +22,21 @@ body{
     color: white;  
 }
 
+
+#alogin{
+	background-color:#d3d3d3;
+	border-radius: 4px;
+	margin-top: 10px;
+	height: 14em;
+	width: 26em;
+}
+
+td[id~=title]{
+	color: #0D98BA;
+	font-family: sofia;
+	font-size: 20px;
+}
+
 #alogin input[type]{
   width: 100%;
   padding: 12px 20px;
@@ -35,6 +50,7 @@ body{
 #alogin input[type]:focus{
 	border: 2px solid #0D98BA;
 }
+
 input[type=submit]{
 	width: 100%;
 	font-weight: bold;
@@ -54,15 +70,26 @@ input[type=submit]:hover{
 }
 
 
-#alogin{
-	background-color:#d3d3d3;
-	border-radius: 4px;
-	height: 60%;
-	width: 30%;
+/*@media only screen and (max-width:768px)
+{
+	#alogin{
+		margin-top: 10px;
+		width:50%;
+	}
 }
 
-td[id~=title]{
-	color: #0D98BA;
-	font-family: sofia;
-	font-size: 20px;
+@media only screen and (max-width:768px)
+{
+	#alogin{
+		margin-top: 10px;
+		width:60%;
+	}
 }
+
+@media only screen and (max-width:576px)
+{
+	#alogin{
+		margin-top: 10px;
+		width:80%;
+	}
+}*/

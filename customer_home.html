@@ -7,18 +7,38 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css\customer_home.css">
 		<link rel="stylesheet" href="css\header.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<style>
+		</style>
 	</head>
 	<body>
-			<div class="header">
-				<h2>Welcome to Healthy-Us..!!</h2>
-			</div>
+			<nav class="navbar navbar-expand-sm navbar-dark" style="background-color:white;">
+				<a class="navbar-brand text-dark ml-sm-3" href="#" style="font-size:40px;">
+					<i id="hus" class="fa fa-stethoscope" ></i>  Healthy-<font color="orange">Us</font>
+				</a>
+			</nav>
 			
-			<nav class="nav">
-				<a id="active" href="customer_home.html">Home</a>
-				<a href="my_orders.html">My Orders</a>
-				<a href="my_account.html">My Account</a>
-				<a href="view_cart.html">View Cart</a>
-				<a href="index.html" style="float:right;">Logout</a>
+			<nav class="navbar-sm navbar-expand-md bg-dark navbar-dark sticky-top">
+				<button class="navbar-toggler ml-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Navbar links -->
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav ">
+						<li class="nav-item"><a class="nav-link" id="active" href="customer_home.html">
+							<i class="fa fa-home" style="font-size:24px"></i></a>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="my_orders.html">My Orders</a></li>
+						<li class="nav-item"><a class="nav-link" href="my_account.html">My Account</a></li>
+						<li class="nav-item"><a class="nav-link" href="view_cart.html">View Cart <i class="fa fa-shopping-cart" style="font-size:20px"></i></a></li>
+						<li class="nav-item"><a class="nav-link" href="index.html">Logout</a></li>
+					</ul>
+				</div>
 			</nav>
 			<p id="luname" style="float:right"></p>
 		<br><br>
@@ -27,51 +47,58 @@
 			document.getElementById("luname").innerHTML= "<b>Signed in as <font color='blue'>"+localStorage.getItem("uname")+"</font></b>";
 		</script>
 		
-		<div class="search">
+		<!--<div class="search">
 			<input type="text" name="search" id="search" placeholder="Search for products..">
-		</div>
-		
-		<br>
+		</div>-->
+		<form class="form-inline" action="#">
+			<input class="form-control mr-sm-2" type="text" placeholder="Search for products..">
+			<button class="btn btn-success" type="submit"><i class="fa fa-search" style="font-size:20px;color:white"></i></button>
+		</form>
 		<br>
 		
 		<div class="container-fluid">
-			<div class="card-group">
-				<div class="card border border-primary">
+			<div class="card-deck text-center">
+				<div class="card">
 					<img class="card-image-top" src="images/ascoril.jpg" alt="ascoril">
 					<div class="card-body">
-						<div class="card-text"><b>Price:</b> 95 rupees</div>
+						<div class="card-text"><b>Ascoril</b></div>
+						<div class="card-title text-danger">95 rupees</div>
 						<a href="product_info.html" class="btn btn-dark">View</a>
 						<a href="#" class="btn btn-primary">ADD to Cart</a>
 					</div>
 				</div>
-				<div class="card border border-primary">
+				<div class="card">
 					<img class="card-image-top" src="images/pyari_saheli.jpg" alt="Pyari_saheli">
 					<div class="card-body">
-						<div class="card-text"><b>Price:</b> 120 rupees</div>
+						<div class="card-text"><b>Pyari_saheli</b></div>
+						<div class="card-title text-danger">120 rupees</div>
 						<a href="product_info.html" class="btn btn-dark">View</a>
 						<a href="#" class="btn btn-primary">ADD to Cart</a>
 					</div>
 				</div>
-				<div class="card border border-primary">
+				<div class="card">
 					<img class="card-image-top" src="images/fecozer.jpg" alt="fecozer">
 					<div class="card-body">
-						<div class="card-text"><b>Price:</b> 90 rupees</div>
+						<div class="card-text"><b>Fecozer</b></div>
+						<div class="card-title text-danger">90 rupees</div>
 						<a href="product_info.html" class="btn btn-dark">View</a>
 						<a href="#" class="btn btn-primary">ADD to Cart</a>
 					</div>
 				</div>
-				<div class="card border border-primary">
+				<div class="card">
 					<img class="card-image-top" src="images/derantox.jpg" alt="derantox">
 					<div class="card-body">
-						<div class="card-text"><b>Price:</b> 115 rupees</div>
+						<div class="card-text"><b>Derantox</b></div>
+						<div class="card-title text-danger">115 rupees</div>
 						<a href="product_info.html" class="btn btn-dark">View</a>
 						<a href="#" class="btn btn-primary">ADD to Cart</a>
 					</div>
 				</div>
-				<div class="card border border-primary">
+				<div class="card">
 					<img class="card-image-top" src="images/daily_iron.jpg" alt="daily_iron">
 					<div class="card-body">
-						<div class="card-text"><B>Price:</B> 105 rupees</div>
+						<div class="card-text"><b>Daily_Iron</b></div>
+						<div class="card-title text-danger">105 rupees</div>
 						<a href="product_info.html" class="btn btn-dark">View</a>
 						<a href="#" class="btn btn-primary">ADD to Cart</a>
 					</div>

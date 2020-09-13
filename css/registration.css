@@ -3,7 +3,7 @@ body{
 	background-repeat: no-repeat;
 	background-color: #fff;
 	background-attachment: fixed;
-	overflow: hidden;
+	overflow: auto;
 	height: 100%;
 }
 
@@ -22,14 +22,29 @@ body{
     color: white;  
 }
 
+#reg{
+	background-color: #d3d3d3;
+	border-radius: 4px;
+	margin-top:10px;
+	height: 21em;
+	width: 40em;
+	overflow:auto;
+}
+
+@media only screen and (max-width:650px)
+{
+	#reg{
+		width:100%;
+	}
+}
 #reg input[type]{
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
 }
 
 #reg input[type]:focus{
@@ -61,12 +76,6 @@ a:hover,a:active{
 	color: blue;
 	text-decoration: underline;
 }
-table{
-	background-color: #d3d3d3;
-	border-radius: 4px;
-	height: 60%;
-	width: 50%;
-}
 
 #msg{
 	display: none;
@@ -85,4 +94,3 @@ table{
 .invalid{
 	color: red;
 }
-

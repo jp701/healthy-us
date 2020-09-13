@@ -1,6 +1,6 @@
 
 body{
-	margin: 1px;
+	margin: 0px;
 	background-size: cover;
 	background-image:url(../images/hu.jpg);
 	background-color:light blue;
@@ -66,8 +66,8 @@ img{
 	border-radius: 5px;
 }
 
-@media only screen and (max-width:700px){
-	.nav{
+@media only screen and (max-width:768px){
+	.nav a{
 		float:none;
 		width:100%;
 	}
